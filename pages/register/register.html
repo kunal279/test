@@ -1,0 +1,41 @@
+<ion-content class="bground">
+    <ion-list>
+        <ion-item no-lines></ion-item>
+        <ion-item no-lines></ion-item>
+        <ion-item no-lines></ion-item>
+        <ion-item>
+            <ion-input placeholder="First Name:" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Last Name:" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label style="color:#2a2c43;margin-left: 8px;">Birth date</ion-label>  
+            <ion-datetime placeholder="" displayFormat="MMM DD YYYY" ></ion-datetime>
+        </ion-item>    
+        <ion-item>
+            <ion-label style="color:#2a2c43;margin-left: 8px;">Blood group</ion-label>
+            <ion-select placeholder="" [(ngModel)]="blood">
+                <ion-option value="o">O+</ion-option>
+                <ion-option value="o-">O-</ion-option>
+                <ion-option value="a+">A+</ion-option>
+                <ion-option value="b+">B+</ion-option>
+                <ion-option value="ab-">AB-</ion-option>
+                <ion-option value="a-">A-</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Phone no.:" type="number"  [(ngModel)]="phoneno" required></ion-input>
+        </ion-item>   
+        
+        <ion-item>
+            <ion-input placeholder="Email:" type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Password" type="password"  [(ngModel)]="password" required>    
+            </ion-input>
+        </ion-item>
+        <ion-item no-lines></ion-item>
+        <button color="primary" ion-button clear (click)="home()">Sign Up</button>
+    </ion-list>
+  </ion-content>

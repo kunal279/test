@@ -1,0 +1,23 @@
+<ion-content class="bground">
+    <div class="space"></div>
+    <ion-list>  
+        <ion-item>
+            
+            <ion-input placeholder="Email" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            
+            <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>    
+        <div class="space"></div>
+        
+        <button ion-button color="primary" clear (click)="register()">Sign Up
+        </button>
+        <button class="signinbtn" ion-button color="#9E9E9E" clear (click)="login()">Sign In</button>
+        <a clear (click)="forget()"><p>Forget password</p></a>
+        <a clear (click)="change()"><p>Change password</p></a>
+        <a clear (click)="list()"><p>List</p></a>
+
+    </ion-list>
+</ion-content>

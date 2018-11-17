@@ -1,0 +1,14 @@
+<ion-content class="bground">
+    <div class="space" ></div>
+    <ion-item>
+        
+        <ion-input placeholder="Email:" type="text"></ion-input>
+    </ion-item>
+    <p>OR</p>
+    <ion-item>
+       
+        <ion-input placeholder="Phone no.:" type="number" [(ngModel)]="phoneno" required></ion-input>
+    </ion-item> 
+    <div class="space"></div>
+    <button ion-button color="primary" clear (click)="otp()">Submit</button>    
+</ion-content>
